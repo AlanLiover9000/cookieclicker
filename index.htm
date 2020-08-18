@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍪cookie clicker</title>
+    <style>
+        body {
+            margin: 0;
+            background: url('cookie');
+        }
+        .main {
+            display: grid;
+            place-items: center;
+            text-align: center;
+        }
+        .btn {
+            border: none;
+            background: none;
+            outline:none;
+            padding: 0px;
+            font-size: 300px;
+        }
+        span {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span>Cookies<p class='number'></p></span>
+        <button class='btn'>🍪</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        var num = 0
+        $('.number').text(num)
+        $('.btn').click(()=>{
+            num++
+            console.log(num)
+            $('.number').text(num)  
+        })
+    </script>
+</body>
+</html>
